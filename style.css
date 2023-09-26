@@ -1,0 +1,499 @@
+/* :root{
+    --lcolor:#0089b7;
+    --dcolor:#003d62;
+    --drcolor:#003251;
+    --scolor:#6499E9;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Prata', serif;
+    font-weight: 300;
+     scroll-behavior: smooth;
+     line-height: 1.4;
+     color: white;
+     
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding:0.2rem;
+}
+
+header{
+    background-color:white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:#003251;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #003251;
+}
+li{
+    border: none;
+    outline: none;
+    border: 0.3rem transparent solid;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar ul li:hover{
+border-bottom: 0.3rem var(--scolor) solid;
+transition: 0.4s ease-in-out;
+}
+
+#home{
+    background: var(--drcolor);
+    padding: 4rem 0;
+}
+
+img{
+  width: 500px;
+ 
+}
+#home .home_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home_content{
+    display: grid;
+    place-items:center;
+}
+#home h1{
+    font-size: 3rem;
+    font-weight: bold;
+   
+}
+.text{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--scolor);
+    text-transform: capitalize;
+}
+.name{
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+#home h2{
+    font-size: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 0.15rem solid olive;
+    white-space:nowrap;
+    margin: 0 auto;
+    animation: identif 5s steps(40,end) ,blink 0.75s step-end infinite;
+   
+}
+
+@keyframes identif {
+    to {
+        width:20%; /* This is an example, adjust it to your needs */
+    /* }
+}
+
+@keyframes blink {
+    0%, 100% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+} */ 
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    line-height: 1.4;
+    margin-top: 6px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+.logo{
+    font-size: 28px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+ li a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px;
+
+}
+li{
+    border: none;
+    outline: none;
+    transition: 0.2s ease-in;
+    border-bottom: 0.3rem transparent solid;
+}
+.navbar ul li:hover{
+    border-bottom: 0.3rem solid red;
+    transition:0.4s ease-in-out;
+    border-radius: 2px;
+}
+#home{
+    margin: 50px auto;
+    
+}
+.home_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.home_img img{
+    max-width: 500px;
+    margin-right:100px;
+}
+.home_content{
+margin-left: 50px;    
+font-size:2rem;
+text-transform: capitalize;
+}
+.home_content h2{
+    overflow: hidden;
+    border-right: .4rem solid red;
+    white-space:nowrap;
+    animation:anime 4s steps(70,end),blink .79s step-end infinite;
+
+}
+@keyframes anime{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+
+    
+}
+@keyframes blink {
+    0%
+    ,100%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: red;
+    }
+
+    
+}
+.home_content a{
+    text-decoration: none;
+    color: black;
+}
+.text{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.name{
+    font-size: 4rem;
+    color:red;
+    font-weight: 700;
+}
+button{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color:blue;
+    color: white;
+    display: block;
+    opacity: 1;
+    transform: translate(0.4s ease-in-out);
+    margin:16px 0;
+    
+   
+
+}
+
+button:hover{
+    opacity: 0.7;
+    transform: translate(0.4s ease-in-out);
+}
+
+.about_container{
+    text-align: center;
+    font-size: 18px;
+}
+.about_title h2{
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    border-bottom: 0.3rem transparent solid;
+    display: inline-block;
+
+
+}
+.about_title h2:hover{
+    border-bottom: 0.3rem solid red;
+    border-radius: 4px;
+
+}
+.about_title h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.about_title p{
+    margin-bottom: 10px;
+    font-weight: 400;
+    
+}
+.about_title a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.education h2{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 0.3rem transparent solid;
+    display: inline-block;
+}
+.education h2:hover{
+    border-bottom: 0.3rem solid red;
+    border-radius: 4px;
+
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.degree{
+   transform: translate(0.2s ease-in-out);
+   transition: 0.2s ease-in-out;
+   margin: 17px;
+   padding: 1rem 3rem;
+   border: none;
+   outline: none;
+  
+   
+}
+.degree:hover{
+    box-shadow :0 0 20px #00000030;
+    transform: translate(0.5s ease-in-out);
+    transition: 0.5s ease-in;
+}
+
+.degree h3{
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 5px;
+}
+.degree p{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 6px;
+}
+footer{
+    background-color:red;
+    
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+#contact h2{
+    font-size:3rem;
+    margin-top: 3rem;
+    color: white;
+    text-transform: capitalize;
+    border-bottom: 0.2rem transparent solid;
+    
+
+}
+
+#contact h2:hover{
+    border-bottom: 3px solid red;
+    transition: 0.4s ease-in-out;
+}
+#contact h5{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+#contact p{
+    font: size 20px;
+    color: aliceblue;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+
+.icons a{
+    display: inline-block;
+    gap: 20px;
+    color: aliceblue;
+    text-transform: lowercase;
+    padding: 15px;
+    font-size: 13px;
+    font-size: 22px;
+
+    
+}
+
+.f_icons:hover{
+    color: #6499E9;
+
+}
+.f_icon:hover{
+    color: black;
+}
+
+.f_ico:hover{
+    color: brown;
+}
+.project_content{
+    text-align: center;
+    
+}
+.project_content h2{
+   border-radius: 2px;
+    text-transform: capitalize;
+    border-bottom: 0.3rem transparent solid;
+    display:inline-block;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* .project_content h2:hover{
+    border-bottom: 0.3rem solid red;
+    transition: 0.6s ease-in-out;
+
+} */
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    margin-bottom: 12rem;
+}
+.right{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: white;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00000030;
+
+}
+
+.right .riht_title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.right .right_sub_title{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.right p{
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.right p span{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.primary_btn{
+    padding:9px 16px;
+    background-color: blue;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 3px;
+    transform: scale(0.3s ease);
+    transition: 0.5s ease-in-out;
+}
+
+.primary_btn:hover{
+    transform: scale(0.6s ease-in-out);
+    transition: 1s ease-in-out;
+}
+
+.primarybtn{
+    border: 1px solid blue;
+    padding: 9px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:blue;
+    border-radius: 3px;
+    transform: translate(0.3s ease-in-out);
+    transition: 0.5s ease-in-out;
+
+}
+
+
+.primarybtn span{
+    margin-left: 2px;
+}
