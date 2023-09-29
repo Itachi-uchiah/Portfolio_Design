@@ -108,21 +108,7 @@ img{
    
 }
 
-@keyframes identif {
-    to {
-        width:20%; /* This is an example, adjust it to your needs */
-    /* }
-}
-
-@keyframes blink {
-    0%, 100% {
-        visibility: visible;
-    }
-    50% {
-        visibility: hidden;
-    }
-} */ 
-
+/*  */
 
 *{
     padding: 0;
@@ -252,8 +238,6 @@ button{
     opacity: 1;
     transform: translate(0.4s ease-in-out);
     margin:16px 0;
-    
-   
 
 }
 
